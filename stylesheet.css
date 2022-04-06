@@ -1,0 +1,134 @@
+body {
+    margin-top: 100px !important;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/imagen1.jpg);
+    background-size:cover;
+}
+header{
+    background-color: white;
+    background-image: url(images/header.jpg);
+    border-bottom: 3px solid;
+    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+nav li{
+    margin-inline: 30px;
+    background-color: rgb(240, 240, 240, 0.7);
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: black;
+    text-decoration: solid;
+    font-size: larger;
+}
+
+nav li a:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+.container {
+      height: 100vh;
+}
+
+.item {
+      background-color: rgb(240, 240, 240, 0.7)  ;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border: 1px solid lightblue;
+      border-radius: 6px;
+      color: black;
+      display:list-item;
+      align-items: center;
+      font-family: 'PT Serif', serif;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.itemSobreNosotros{
+    display: flex;
+}
+
+.itemSobreNosotros img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+  /* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 1rem;
+    list-style: none;
+}
+
+table{
+    width: 100%;
+    
+}
+.precio{
+    float: right;
+}
+.footMenu{
+    font-size: small;
+}
+
+.titulos{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif  
+}
+.divTitulos{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.divTitulos h3{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.logoBeto{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.logoBeto img{
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+#betoNav {
+    height: 12vh; 
+    margin: 4px 4px;
+}
+.titulos{
+    color: white;
+    font-size: .7cm;
+    text-transform: uppercase;
+}

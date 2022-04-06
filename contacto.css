@@ -1,0 +1,101 @@
+body {
+    margin-top: 100px !important;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/imagen1.jpg);
+    background-size:cover;
+}
+header{
+    background-color: white;
+    background-image: url(images/header.jpg);
+    border-bottom: 3px solid;
+    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+nav li{
+    margin-inline: 30px;
+    background-color: rgb(240, 240, 240, 0.7);
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: black;
+    text-decoration: solid;
+    font-size: larger;
+}
+
+nav li a:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+
+.logoBeto{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.logoBeto img{
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+#betoNav {
+    height: 12vh; 
+    margin: 4px 4px;
+}
+
+
+
+h1
+{
+   text-transform:uppercase;
+    font: bold 20px/45px Helvetica, Verdana, sans-serif;
+    text-align: center;
+}
+label 
+{
+    display: block;
+}
+h2 
+{
+    font: bold 25px Helvetica, Verdana, sans-serif;
+    background-color: gray;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0px auto;
+}
+.container
+{
+    background-color: white;
+    border: 1px solid lightblue;
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 60px;
+    border-radius: 15px;
+    opacity: 80%;
+}
+.form-group{
+    font: 24px Helvetica, Verdana, sans-serif;
+}
