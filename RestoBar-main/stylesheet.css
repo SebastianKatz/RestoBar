@@ -31,13 +31,19 @@ nav ul{
 
 nav li{
     margin-inline: 30px;
-    background-color: rgb(240, 240, 240, 0.7) 
+    background-color: rgb(240, 240, 240, 0.7);
+    text-transform: uppercase;
 }
 
 nav li a{
     color: black;
     text-decoration: solid;
     font-size: larger;
+}
+
+nav li a:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
 }
 
 .container {
@@ -92,7 +98,11 @@ table{
 .titulos{
     margin-left: 1rem;
     margin-right: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif  
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    font-size: .7cm;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
 }
 .divTitulos{
     display: flex;
@@ -120,4 +130,43 @@ table{
 #betoNav {
     height: 12vh; 
     margin: 4px 4px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    align-items: center;
+    font-size: large;
+}
+
+.footContent{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.mapsIframe{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 30px 50px; 
+}
+
+.footItem{
+    display: flex;
+}
+i{
+    align-self: center;
+    margin-right: 2px;
+}
+article p{
+    align-content: center;
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo de Beto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="betoNav" class="logoBeto">
+                <img src="images/betoLogo.jpg" alt="Logo Beto">
+            </div>
+            <ul><a href=""></a>
+                <li><a class="nav-link" href="index.html">Menú</a></li>
+                <li><a href="index.html">Sobre nosotros</a></li>
+                <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+<div class="container" style="max-width: 650px; min-width: 400px;">
+  <div class="card">
+    <h2 class="card-header text-center">Formulario de Consulta</h2>
+    <div class="card-body">
+      <form id="myForm" onsubmit="return validar()">
+        <div class="form-group">
+            <br>
+          <label for="user">Nombre:</label>
+          <input type="text" class="form-control" id="user" placeholder="Nombre">
+          <label for="user">Apellido:</label>
+          <input type="text" class="form-control" id="user" placeholder="Apellido">
+          <label for="email">Correo Electronico:</label>
+          <input type="email" id="email" placeholder="nombre@ejemplo.com">
+          <label for="codipos">Telefono:</label>
+          <input type="text" id="telefono" placeholder="Telefono">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="local">Local:</label>      
+            <select class="form-control" id="local">
+              <option value="Lota">Seleccionar</option>
+              <option value="Lota">Almagro</option>
+              <option value="Coronel">Palermo</option>
+              <option value="concepción">Belgrano</option>
+            </select>      
+          <label for="terminos">Legalidades:</label><br>
+          <input type="checkbox" id="terminos"> Acepto los términos y condiciones          
+        </div>
+        <input type="submit" class="btn btn-success" id="boton" value="Enviar">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
