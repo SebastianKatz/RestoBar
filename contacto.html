@@ -21,35 +21,36 @@
         </nav>
     </header>
     <br>
-<div class="container" style="max-width: 650px; min-width: 400px;">
+<div class="container" >
   <div class="card">
     <h2 class="card-header text-center">Formulario de Consulta</h2>
     <div class="card-body">
-      <form id="myForm" onsubmit="return validar()">
+      <form id="myForm" method="POST" action="mensajeEnviado.html">
         <div class="form-group">
             <br>
-          <label for="user">Nombre:</label>
-          <input type="text" class="form-control" id="user" placeholder="Nombre">
-          <label for="user">Apellido:</label>
-          <input type="text" class="form-control" id="user" placeholder="Apellido">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="user" placeholder="Nombre" name="nombre" required>
+          <label for="apellido">Apellido:</label>
+          <input type="text" class="form-control" id="user" placeholder="Apellido" name="apellido" required>
           <label for="email">Correo Electronico:</label>
-          <input type="email" id="email" placeholder="nombre@ejemplo.com">
-          <label for="codipos">Telefono:</label>
-          <input type="text" id="telefono" placeholder="Telefono">
+          <input type="email" id="email" placeholder="nombre@ejemplo.com" name="email" required>
+          <label for="telefono">Telefono:</label>
+          <input type="number" id="telefono" placeholder="Telefono" name="telefono" required>
         </div>
         <br>
         <div class="form-group">
           <label for="local">Local:</label>      
-            <select class="form-control" id="local">
-              <option value="Lota">Seleccionar</option>
-              <option value="Lota">Almagro</option>
-              <option value="Coronel">Palermo</option>
-              <option value="concepción">Belgrano</option>
+            <select class="form-control" id="local" required>
+              <option selected value="-1">Seleccionar</option>
+              <option value="1">Almagro</option>
+              <option value="2">Palermo</option>
+              <option value="3">Belgrano</option>
             </select>      
           <label for="terminos">Legalidades:</label><br>
-          <input type="checkbox" id="terminos"> Acepto los términos y condiciones          
+          <input type="checkbox" id="terminos" class="terminos" required> Acepto los términos y condiciones          
         </div>
-        <input type="submit" class="btn btn-success" id="boton" value="Enviar">
+        <input type="reset" class="btn" value="Borrar datos del formulario" />
+        <input type="submit" class="btn" id="boton" value="Enviar">
       </form>
     </div>
   </div>
